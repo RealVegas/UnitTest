@@ -14,7 +14,7 @@ class TestMath(unittest.TestCase):
         self.assertRaises(ValueError, divide, 7, 0)
         self.assertRaises(NameError, divide, 7, 0)
 
-    def test_modulo(self):
+    def test_modulo(self) -> None:
         self.assertEqual(modulo(2, 2), 0)
         self.assertEqual(modulo(2, 3), 2)
         self.assertRaises(ValueError, divide, 3, 0)
